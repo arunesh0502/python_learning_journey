@@ -11,5 +11,7 @@ This repository documents my intensive Python learning journey from May-July 202
 - Build portfolio projects
 
 ### 📅 Progress Tracker
-
 #### Week 1: Python Foundations 
+- Variables, lists and operators
+- Functions and methods
+- Dictionaries
