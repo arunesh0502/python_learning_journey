@@ -1,0 +1,237 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Perth Cost of Living - Detailed Breakdown
+# Using Pandas for Professional Data Analysis
+
+# Monthly Expenses Breakdown
+expenses_data = {
+    'category': [
+        'Rent (Shared Accommodation)',
+        'Rent (Studio Room)',
+        'Groceries',
+        'Transportation',
+        'Phone/Internet',
+        'Entertainment',
+        'Utilities',
+        'Eating Out (Occasional)',
+        'Personal Care',
+        'Textbooks/Materials',
+        'Health Insurance',
+        'Emergency Buffer'
+    ],
+    'monthly_cost': [
+        1200, 2400, 400, 150, 100, 100,
+        200,  200,  250,  50,  65, 300
+    ],
+    'category_type': [
+        'Housing', 'Housing', 'Food', 'Transport',
+        'Utilities', 'Lifestyle', 'Utilities', 'Food',
+        'Lifestyle', 'Education', 'Essential', 'Savings'
+    ],
+    'essential': [
+        'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'No',
+        'Yes', 'No',  'Yes', 'Yes', 'Yes', 'Yes'
+    ]
+}
+
+df = pd.DataFrame(expenses_data)
+
+# Calculate Totals
+shared_total   = df[df['category'].str.contains('Shared', case=False)]['monthly_cost'].sum()
+studio_total   = df[df['category'].str.contains('Studio', case=False)]['monthly_cost'].sum()
+other_total    = df[~df['category'].str.contains('Shared|Studio', case=False)]['monthly_cost'].sum()
+
+shared_monthly = shared_total + other_total
+studio_monthly = studio_total + other_total
+savings        = studio_monthly - shared_monthly
+
+# Visualization
+fig, axes = plt.subplots(2, 2, figsize=(16, 18))
+fig.patch.set_facecolor('whitesmoke')
+
+plt.suptitle(
+    'Perth Cost of Living Analysis: Complete Financial Planning',
+    fontsize=15, fontweight='bold', y=0.98
+)
+
+plt.subplots_adjust(top=0.93, bottom=0.05, left=0.07, right=0.97,
+                    hspace=0.40, wspace=0.30)
+
+# Subplot 1: Monthly Expenses Breakdown
+ax1 = axes[0, 0]
+
+df_sorted = df.sort_values('monthly_cost', ascending=True).reset_index(drop=True)
+colors_bar = plt.cm.Set3(np.linspace(0, 1, len(df_sorted)))
+
+ax1.barh(df_sorted['category'], df_sorted['monthly_cost'],
+         color=colors_bar, edgecolor='white', linewidth=0.7, height=0.65)
+
+ax1.set_xlabel('Monthly Cost (AUD)', fontsize=9)
+ax1.set_title('Monthly Expenses Breakdown', fontsize=12, fontweight='bold', pad=10)
+
+# Add Value Labels
+ax1.set_xlim(0, df_sorted['monthly_cost'].max() * 1.25)
+ax1.tick_params(axis='y', labelsize=8)
+ax1.tick_params(axis='x', labelsize=8)
+ax1.xaxis.grid(True, linestyle='--', alpha=0.4, color='lightgrey')
+ax1.set_axisbelow(True)
+ax1.set_facecolor('#FAFAFA')
+
+for i, cost in enumerate(df_sorted['monthly_cost']):
+    ax1.text(cost + 25, i, f'${cost:,}', va='center', fontsize=7.5, fontweight='bold')
+
+# Subplot 2: Spending Distribution by Category 
+ax2 = axes[0, 1]
+
+category_summary = df.groupby('category_type')['monthly_cost'].sum().sort_values(ascending=False)
+total_pie = category_summary.sum()
+
+wedges, _ = ax2.pie(
+    category_summary,
+    labels=None,         # No labels on the wedges themselves to avoid overlap
+    startangle=140,
+    colors=plt.cm.Set3(np.linspace(0, 1, len(category_summary))),
+    wedgeprops=dict(linewidth=1.5, edgecolor='white'),
+    radius=0.95
+)
+
+# Creating Legend for Pie Chart with Percentages
+legend_labels = [
+    f'{k}  ({v / total_pie * 100:.0f}%)'
+    for k, v in category_summary.items()
+]
+
+ax2.legend(wedges, legend_labels,
+           title='Category', title_fontsize=8,
+           loc='lower center', bbox_to_anchor=(0.5, -0.22),
+           ncol=2, fontsize=8, frameon=False)
+
+ax2.set_title('Spending Distribution by Category', fontsize=12, fontweight='bold', pad=10)
+ax2.set_facecolor('whitesmoke')
+
+# Subplot 3: Shared vs Studio Comparison
+ax3 = axes[1, 0]
+
+scenarios  = ['Shared Room\n(Budget)', 'Studio Room\n(Premium)']
+costs      = [shared_monthly, studio_monthly]
+
+bars3 = ax3.bar(scenarios, costs,
+                color=['steelblue', 'coral'],
+                edgecolor='white', linewidth=0.8, width=0.45)
+
+ax3.set_ylabel('Monthly Cost (AUD)', fontsize=9)
+ax3.set_title('Budget Scenarios: Shared vs Studio', fontsize=12, fontweight='bold', pad=10)
+ax3.set_ylim(0, max(costs) * 1.32)
+ax3.tick_params(axis='x', labelsize=9)
+ax3.tick_params(axis='y', labelsize=8)
+ax3.yaxis.grid(True, linestyle='--', alpha=0.4, color='lightgrey')
+ax3.set_axisbelow(True)
+ax3.set_facecolor('#FAFAFA')
+
+# Add Value Labels 
+for bar, cost in zip(bars3, costs):
+    ax3.text(bar.get_x() + bar.get_width() / 2,
+             bar.get_height() + max(costs) * 0.015,
+             f'${cost:,.0f}/month\n${cost * 12:,.0f}/year',
+             ha='center', va='bottom', fontsize=9, fontweight='bold')
+
+# Add Savings Annotation
+ax3.text(0.5, 0.60,
+         f'Save ${savings:,.0f}/month\n${savings * 12:,.0f}/year',
+         ha='center', va='center', transform=ax3.transAxes,
+         fontsize=10, fontweight='bold', color='darkgreen',
+         bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.8,
+                   edgecolor='goldenrod', linewidth=1.2))
+
+# Budget Comparison Text Box
+ax4 = axes[1, 1]
+ax4.axis('off')
+ax4.set_facecolor('whitesmoke')
+
+tuition = 45_000 * 2
+misc    = 5_000 * 2
+total   = shared_monthly * 24 + tuition + misc
+
+budget_text = f"""
+Budget Comparison: 2-Year Master's Program
+{'─'*50}
+
+  Shared Room (Budget Scenario)
+    Monthly Cost      :  ${shared_monthly:>8,.0f}
+    Per Semester      :  ${shared_monthly * 6:>8,.0f}
+    Annual Cost       :  ${shared_monthly * 12:>8,.0f}
+    Total for 2 Years :  ${shared_monthly * 24:>8,.0f}
+
+  Studio Room (Premium Scenario)
+    Monthly Cost      :  ${studio_monthly:>8,.0f}
+    Per Semester      :  ${studio_monthly * 6:>8,.0f}
+    Annual Cost       :  ${studio_monthly * 12:>8,.0f}
+    Total for 2 Years :  ${studio_monthly * 24:>8,.0f}
+
+  Savings  (Shared vs Studio)
+    Monthly Savings   :  ${savings:>8,.0f}
+    Annual Savings    :  ${savings * 12:>8,.0f}
+    2-Year Savings    :  ${savings * 24:>8,.0f}
+
+{'─'*50}
+  Total Budget  (Shared, 2 Years)
+    Living Expenses   :  ${shared_monthly * 24:>8,.0f}
+    Tuition (est.)    :  ${tuition:>8,.0f}
+    Flights/Visa/Misc :  ${misc:>8,.0f}
+{'─'*50}
+  Grand Total (AUD)   :  ${total:>8,.0f}
+  Grand Total (INR ≈) : ₹{total * 68:>9,.0f}
+"""
+
+ax4.text(0.05, 0.97, budget_text,
+         va='top', transform=ax4.transAxes,
+         fontsize=8.5, fontfamily='monospace',
+         bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7,
+                   edgecolor='burlywood', linewidth=1.2))
+
+ax4.set_title('2-Year Financial Summary', fontsize=12, fontweight='bold', pad=10)
+
+# Save the Figure
+plt.savefig('perth_cost_of_living_analysis.png',
+            dpi=200, bbox_inches='tight', facecolor='whitesmoke')
+plt.show()
+
+print('\n' + '='*70)
+print('Perth Monthly Living Costs Breakdown:')
+print(df[['category', 'monthly_cost', 'category_type', 'essential']].to_string(index=False))
+print('='*70)
+
+# Summary by Accommodation Type
+print(f'\n Monthly Totals:')
+print(f'   Shared Room: ${shared_monthly:,.0f}')
+print(f'   Studio Room: ${studio_monthly:,.0f}')
+print(f'\n Annual Totals:')
+print(f'   Shared Room: ${shared_monthly * 12:,.0f}')
+print(f'   Studio Room: ${studio_monthly * 12:,.0f}')
+
+# Group by Category Type
+category_summary = df.groupby('category_type')['monthly_cost'].sum().sort_values(ascending=False)
+print('\n Monthly Expenses by Category Type:')
+print(category_summary)
+
+# Essential vs Non-Essential Costs
+essential_costs     = df[df['essential'] == 'Yes']['monthly_cost'].sum()
+non_essential_costs = df[df['essential'] == 'No']['monthly_cost'].sum()
+print(f"\n ESSENTIAL vs OPTIONAL:")
+print(f'   Essential Monthly Costs:     ${essential_costs:,.0f}')
+print(f'   Non-Essential Monthly Costs: ${non_essential_costs:,.0f}')
+
+# Save Detailed Breakdown to CSV
+# Create a Summary for Easy Reference and Save it to CSV
+df.to_csv('perth_monthly_expenses.csv', index=False)
+summary_data = pd.DataFrame({
+    'Scenario':              ['Shared Room (Budget)', 'Studio Room (Premium)'],
+    'Monthly Cost (AUD)':    [shared_monthly, studio_monthly],
+    'Annual Cost (AUD)':     [shared_monthly * 12, studio_monthly * 12],
+    'Total for 2 Years (AUD)': [shared_monthly * 24, studio_monthly * 24],
+})
+summary_data.to_csv('perth_cost_summary.csv', index=False)
+print('\nAnalysis complete. All files saved.')
+print('='*70)

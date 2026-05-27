@@ -1,0 +1,13 @@
+category,monthly_cost,category_type,essential
+Rent (Shared Accommodation),1200,Housing,Yes
+Rent (Studio Room),2400,Housing,Yes
+Groceries,400,Food,Yes
+Transportation,150,Transport,Yes
+Phone/Internet,100,Utilities,Yes
+Entertainment,100,Lifestyle,No
+Utilities,200,Utilities,Yes
+Eating Out (Occasional),200,Food,No
+Personal Care,250,Lifestyle,Yes
+Textbooks/Materials,50,Education,Yes
+Health Insurance,65,Essential,Yes
+Emergency Buffer,300,Savings,Yes

@@ -18,7 +18,7 @@ This repository documents my intensive 9-week python preparation for my Master o
 - Lists, NumPy arrays, Matplotlib basics
 
 #### Week 2: 
-- Pandas Fundamentals
+- Pandas, Dictionaries
 - Mini Projects (Badminton, University, Perth - related)
-
+- Perth Financial Planning Project - Major
 
