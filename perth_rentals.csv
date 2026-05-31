@@ -1,0 +1,151 @@
+listing_id,suburb,property_type,rent_weekly,bonds,bedrooms,bathrooms,furnished,parking,pets_allowed,available_from,distance_to_uwa_km,safety_rating,description_length
+1001,Nedlands,1 BR,767,3068,1,1,Semi,No,Yes,2026-07-05,3.9,9,203
+1002,Subiaco,2 BR,892,3568,2,2,No,Yes,No,2026-07-12,2.0,1,235
+1003,Mount Lawley,Shared Room,258,1032,3,1,Semi,Yes,Yes,2026-07-19,2.7,6,78
+1004,Crawley,1 BR,525,2100,1,1,Yes,Yes,Yes,2026-07-26,4.1,7,158
+1005,Shenton Park,1 BR,546,2184,1,1,Yes,Yes,,2026-08-02,2.8,3,147
+1006,Fremantle,2 BR,781,3124,2,1,Semi,No,No,2026-08-09,3.2,8,264
+1007,Victoria Park,Shared Room,209,836,2,1,Yes,Yes,No,2026-08-16,4.6,5,86
+1008,Leederville,Shared Room,215,860,4,1,Semi,No,No,2026-08-23,3.0,9,124
+1009,Claremont,1 BR,698,2792,1,1,Yes,Yes,No,2026-08-30,13.5,5,119
+1010,Cottesloe,Studio Room,681,2724,1,1,Yes,,No,2026-09-06,1.7,9,195
+1011,Nedlands,1 BR,585,2340,1,1,Semi,No,No,2026-09-13,8.1,4,177
+1012,Subiaco,1 BR,749,2996,1,1,Yes,Yes,Yes,2026-09-20,6.5,9,134
+1013,Mount Lawley,1 BR,769,3076,1,1,Semi,Yes,Yes,2026-09-27,14.7,5,91
+1014,Crawley,1 BR,616,2464,1,1,Yes,Yes,No,2026-10-04,2.1,9,149
+1015,Shenton Park,2 BR,756,3024,2,2,Yes,Yes,Yes,2026-10-11,6.3,3,90
+1016,Fremantle,Shared Room,336,1344,4,2,No,,Yes,2026-10-18,14.6,4,215
+1017,Victoria Park,2 BR,864,3456,2,2,No,,Yes,2026-10-25,13.0,9,83
+1018,Leederville,2 BR,925,3700,2,1,Semi,Yes,No,2026-11-01,12.3,6,66
+1019,Claremont,2 BR,821,3284,2,1,No,No,No,2026-11-08,4.2,2,214
+1020,Cottesloe,1 BR,714,2856,1,1,Semi,Yes,Yes,2026-11-15,3.0,7,202
+1021,Nedlands,Studio Room,481,1924,1,1,No,Yes,No,2026-11-22,10.2,2,279
+1022,Subiaco,Shared Room,315,1260,3,2,Yes,Yes,Yes,2026-11-29,14.0,2,171
+1023,Mount Lawley,Studio Room,502,2008,1,1,Semi,Yes,,2026-12-06,8.6,1,125
+1024,Crawley,2 BR,766,3064,2,2,Semi,Yes,Yes,2026-12-13,8.8,3,136
+1025,Shenton Park,2 BR,763,3052,2,1,Yes,No,Yes,2026-12-20,4.6,6,166
+1026,Fremantle,Studio Room,558,2232,1,1,Semi,Yes,No,2026-12-27,11.7,8,155
+1027,Victoria Park,Studio Room,551,2204,1,1,Semi,Yes,No,2027-01-03,3.2,9,135
+1028,Leederville,Studio Room,507,2028,1,1,No,Yes,No,2027-01-10,5.2,7,262
+1029,Claremont,2 BR,937,3748,2,2,Semi,Yes,Yes,2027-01-17,6.7,4,76
+1030,Cottesloe,2 BR,794,3176,2,2,Yes,Yes,No,2027-01-24,7.9,6,106
+1031,Nedlands,Shared Room,297,1188,2,2,No,No,Yes,2027-01-31,4.0,5,80
+1032,Subiaco,Shared Room,330,1320,2,1,No,Yes,No,2027-02-07,2.2,8,183
+1033,Mount Lawley,2 BR,786,3144,2,1,Yes,No,Yes,2027-02-14,9.4,1,268
+1034,Crawley,Studio Room,570,2280,1,1,Yes,No,Yes,2027-02-21,4.7,1,217
+1035,Shenton Park,Studio Room,582,2328,1,1,No,Yes,Yes,2027-02-28,8.9,6,147
+1036,Fremantle,Shared Room,307,1228,3,2,Semi,Yes,No,2027-03-07,2.7,2,61
+1037,Victoria Park,2 BR,788,3152,2,1,No,Yes,,2027-03-14,7.5,5,286
+1038,Leederville,Shared Room,214,856,3,1,Yes,,No,2027-03-21,8.2,1,298
+1039,Claremont,Shared Room,319,1276,4,2,No,No,No,2027-03-28,1.3,7,102
+1040,Cottesloe,1 BR,503,2012,1,1,Yes,Yes,,2027-04-04,5.4,1,248
+1041,Nedlands,1 BR,709,2836,1,1,No,Yes,No,2027-04-11,2.4,4,187
+1042,Subiaco,1 BR,660,2640,1,1,Semi,Yes,No,2027-04-18,1.4,9,222
+1043,Mount Lawley,Studio Room,415,1660,1,1,No,Yes,,2027-04-25,14.9,1,194
+1044,Crawley,2 BR,986,3944,2,1,No,Yes,Yes,2027-05-02,5.2,4,203
+1045,Shenton Park,2 BR,919,3676,2,2,Yes,Yes,Yes,2027-05-09,12.2,6,262
+1046,Fremantle,2 BR,857,3428,2,2,Yes,,No,2027-05-16,4.2,6,269
+1047,Victoria Park,2 BR,875,3500,2,2,Yes,No,Yes,2027-05-23,10.4,8,239
+1048,Leederville,1 BR,726,2904,1,1,No,Yes,Yes,2027-05-30,11.5,1,171
+1049,Claremont,Studio Room,569,2276,1,1,Semi,Yes,Yes,2027-06-06,9.1,7,95
+1050,Cottesloe,Studio Room,433,1732,1,1,Yes,Yes,No,2027-06-13,7.3,1,113
+1051,Nedlands,1 BR,750,3000,1,1,Yes,No,Yes,2027-06-20,6.5,7,179
+1052,Subiaco,Studio Room,646,2584,1,1,No,Yes,,2027-06-27,5.6,3,103
+1053,Mount Lawley,1 BR,768,3072,1,1,Yes,No,No,2027-07-04,14.0,8,156
+1054,Crawley,2 BR,890,3560,2,2,Semi,Yes,Yes,2027-07-11,12.5,3,242
+1055,Shenton Park,1 BR,773,3092,1,1,Semi,Yes,Yes,2027-07-18,14.5,1,100
+1056,Fremantle,2 BR,909,3636,2,1,Yes,Yes,No,2027-07-25,2.3,8,230
+1057,Victoria Park,2 BR,845,3380,2,1,Yes,Yes,Yes,2027-08-01,11.1,3,85
+1058,Leederville,Shared Room,322,1288,2,1,No,No,Yes,2027-08-08,14.1,2,164
+1059,Claremont,1 BR,538,2152,1,1,Semi,No,No,2027-08-15,3.1,1,75
+1060,Cottesloe,Shared Room,245,980,3,2,Semi,Yes,No,2027-08-22,1.5,3,78
+1061,Nedlands,1 BR,528,2112,1,1,Yes,Yes,Yes,2027-08-29,11.2,2,198
+1062,Subiaco,1 BR,744,2976,1,1,No,No,No,2027-09-05,8.8,2,60
+1063,Mount Lawley,Shared Room,384,1536,4,2,Semi,No,,2027-09-12,12.7,6,89
+1064,Crawley,Shared Room,215,860,2,1,Semi,No,Yes,2027-09-19,2.5,1,60
+1065,Shenton Park,1 BR,735,2940,1,1,No,No,Yes,2027-09-26,12.0,2,213
+1066,Fremantle,Studio Room,638,2552,1,1,No,Yes,No,2027-10-03,3.4,6,162
+1067,Victoria Park,2 BR,870,3480,2,1,Semi,No,Yes,2027-10-10,2.9,3,236
+1068,Leederville,Shared Room,209,836,2,1,Semi,,Yes,2027-10-17,2.9,4,88
+1069,Claremont,2 BR,907,3628,2,1,No,,Yes,2027-10-24,12.3,1,281
+1070,Cottesloe,Studio Room,464,1856,1,1,Semi,No,No,2027-10-31,10.1,8,276
+1071,Nedlands,Studio Room,576,2304,1,1,Yes,No,,2027-11-07,8.1,7,103
+1072,Subiaco,Studio Room,402,1608,1,1,Yes,No,No,2027-11-14,5.7,7,147
+1073,Mount Lawley,Shared Room,372,1488,2,1,No,No,,2027-11-21,13.2,3,104
+1074,Crawley,Studio Room,541,2164,1,1,No,Yes,No,2027-11-28,6.2,3,160
+1075,Shenton Park,Shared Room,319,1276,2,2,No,Yes,Yes,2027-12-05,12.3,2,201
+1076,Fremantle,Studio Room,557,2228,1,1,Yes,No,No,2027-12-12,6.9,1,295
+1077,Victoria Park,2 BR,991,3964,2,2,Semi,,No,2027-12-19,6.0,7,199
+1078,Leederville,2 BR,817,3268,2,1,Yes,Yes,No,2027-12-26,7.2,7,118
+1079,Claremont,1 BR,645,2580,1,1,Semi,No,Yes,2028-01-02,4.9,2,105
+1080,Cottesloe,2 BR,939,3756,2,1,Yes,No,No,2028-01-09,11.3,7,82
+1081,Nedlands,1 BR,792,3168,1,1,Semi,Yes,No,2028-01-16,7.8,8,299
+1082,Subiaco,2 BR,902,3608,2,2,Yes,No,Yes,2028-01-23,3.9,1,85
+1083,Mount Lawley,Shared Room,375,1500,4,1,No,No,No,2028-01-30,13.5,9,288
+1084,Crawley,2 BR,942,3768,2,1,Yes,Yes,Yes,2028-02-06,6.1,7,197
+1085,Shenton Park,1 BR,572,2288,1,1,Semi,Yes,Yes,2028-02-13,8.4,3,260
+1086,Fremantle,1 BR,639,2556,1,1,Yes,Yes,Yes,2028-02-20,13.6,8,276
+1087,Victoria Park,Studio Room,586,2344,1,1,Yes,No,Yes,2028-02-27,9.6,7,293
+1088,Leederville,Shared Room,236,944,2,2,Yes,Yes,Yes,2028-03-05,2.2,8,284
+1089,Claremont,2 BR,810,3240,2,1,No,Yes,No,2028-03-12,14.1,6,130
+1090,Cottesloe,Studio Room,597,2388,1,1,Yes,Yes,Yes,2028-03-19,9.6,9,239
+1091,Nedlands,2 BR,788,3152,2,1,No,,Yes,2028-03-26,5.4,5,158
+1092,Subiaco,2 BR,933,3732,2,1,No,Yes,No,2028-04-02,2.5,3,284
+1093,Mount Lawley,Studio Room,410,1640,1,1,Yes,Yes,Yes,2028-04-09,12.0,3,275
+1094,Crawley,Studio Room,461,1844,1,1,Yes,No,No,2028-04-16,9.5,1,250
+1095,Shenton Park,Studio Room,625,2500,1,1,Yes,No,No,2028-04-23,8.2,8,203
+1096,Fremantle,Studio Room,552,2208,1,1,Semi,Yes,No,2028-04-30,13.5,2,243
+1097,Victoria Park,Studio Room,598,2392,1,1,Yes,Yes,Yes,2028-05-07,11.9,3,294
+1098,Leederville,2 BR,801,3204,2,1,No,Yes,Yes,2028-05-14,2.7,8,122
+1099,Claremont,Studio Room,659,2636,1,1,Yes,No,Yes,2028-05-21,5.0,8,250
+1100,Cottesloe,Shared Room,258,1032,3,2,Semi,No,No,2028-05-28,4.1,4,89
+1101,Nedlands,1 BR,571,2284,1,1,Yes,No,Yes,2028-06-04,11.3,4,66
+1102,Subiaco,Studio Room,547,2188,1,1,Semi,No,Yes,2028-06-11,1.0,5,178
+1103,Mount Lawley,Studio Room,462,1848,1,1,Semi,No,Yes,2028-06-18,8.8,6,266
+1104,Crawley,2 BR,803,3212,2,2,Yes,No,,2028-06-25,11.6,5,110
+1105,Shenton Park,Studio Room,642,2568,1,1,No,No,No,2028-07-02,13.2,7,220
+1106,Fremantle,Studio Room,506,2024,1,1,Semi,No,Yes,2028-07-09,5.5,2,153
+1107,Victoria Park,Studio Room,625,2500,1,1,Yes,No,Yes,2028-07-16,12.4,7,91
+1108,Leederville,2 BR,806,3224,2,1,Yes,Yes,Yes,2028-07-23,2.1,7,74
+1109,Claremont,Studio Room,617,2468,1,1,No,Yes,,2028-07-30,12.8,1,88
+1110,Cottesloe,1 BR,740,2960,1,1,Semi,Yes,No,2028-08-06,2.3,7,84
+1111,Nedlands,2 BR,999,3996,2,1,Semi,Yes,No,2028-08-13,6.3,5,180
+1112,Subiaco,1 BR,758,3032,1,1,Yes,No,No,2028-08-20,12.1,3,291
+1113,Mount Lawley,2 BR,869,3476,2,2,Yes,No,No,2028-08-27,2.7,3,278
+1114,Crawley,Studio Room,661,2644,1,1,No,Yes,Yes,2028-09-03,3.8,4,157
+1115,Shenton Park,1 BR,504,2016,1,1,No,No,Yes,2028-09-10,11.0,2,221
+1116,Fremantle,2 BR,754,3016,2,1,Semi,Yes,Yes,2028-09-17,10.9,2,228
+1117,Victoria Park,Shared Room,253,1012,4,2,Semi,No,No,2028-09-24,9.8,1,271
+1118,Leederville,Studio Room,446,1784,1,1,Yes,Yes,Yes,2028-10-01,10.6,5,151
+1119,Claremont,2 BR,964,3856,2,2,Semi,No,No,2028-10-08,8.4,4,147
+1120,Cottesloe,Shared Room,376,1504,3,2,No,No,No,2028-10-15,4.2,2,61
+1121,Nedlands,2 BR,758,3032,2,1,No,Yes,Yes,2028-10-22,5.5,3,68
+1122,Subiaco,Shared Room,298,1192,2,2,Yes,No,Yes,2028-10-29,3.1,7,150
+1123,Mount Lawley,Studio Room,419,1676,1,1,No,Yes,Yes,2028-11-05,13.7,7,93
+1124,Crawley,1 BR,740,2960,1,1,No,Yes,No,2028-11-12,9.0,4,236
+1125,Shenton Park,Shared Room,260,1040,4,2,No,Yes,Yes,2028-11-19,6.3,5,98
+1126,Fremantle,2 BR,872,3488,2,2,No,Yes,No,2028-11-26,7.2,5,238
+1127,Victoria Park,Studio Room,577,2308,1,1,Yes,No,Yes,2028-12-03,14.2,6,66
+1128,Leederville,Shared Room,281,1124,2,2,Yes,No,No,2028-12-10,2.7,9,123
+1129,Claremont,2 BR,811,3244,2,1,Semi,No,No,2028-12-17,9.0,2,106
+1130,Cottesloe,2 BR,894,3576,2,1,No,,,2028-12-24,7.8,5,104
+1131,Nedlands,2 BR,965,3860,2,1,Semi,No,No,2028-12-31,9.4,3,290
+1132,Subiaco,Shared Room,202,808,2,2,Yes,Yes,,2029-01-07,0.8,4,96
+1133,Mount Lawley,Shared Room,359,1436,4,2,Yes,No,Yes,2029-01-14,13.1,6,61
+1134,Crawley,Shared Room,212,848,2,1,Yes,No,No,2029-01-21,14.0,8,111
+1135,Shenton Park,1 BR,619,2476,1,1,Yes,No,,2029-01-28,8.7,1,129
+1136,Fremantle,Shared Room,324,1296,3,1,Yes,Yes,No,2029-02-04,10.6,8,265
+1137,Victoria Park,Shared Room,288,1152,3,1,Yes,No,,2029-02-11,13.9,7,132
+1138,Leederville,Shared Room,272,1088,3,1,Yes,No,Yes,2029-02-18,10.8,1,57
+1139,Claremont,1 BR,567,2268,1,1,No,Yes,No,2029-02-25,2.7,2,272
+1140,Cottesloe,Shared Room,341,1364,3,1,Semi,No,No,2029-03-04,8.9,3,198
+1141,Nedlands,2 BR,850,3400,2,2,Yes,Yes,No,2029-03-11,9.3,1,130
+1142,Subiaco,Shared Room,297,1188,4,2,No,No,No,2029-03-18,6.6,9,264
+1143,Mount Lawley,2 BR,760,3040,2,1,No,Yes,No,2029-03-25,11.2,8,278
+1144,Crawley,2 BR,854,3416,2,1,Semi,Yes,Yes,2029-04-01,14.0,2,167
+1145,Shenton Park,2 BR,933,3732,2,2,Yes,No,No,2029-04-08,13.9,9,257
+1146,Fremantle,1 BR,622,2488,1,1,Semi,Yes,Yes,2029-04-15,7.0,7,247
+1147,Victoria Park,1 BR,528,2112,1,1,Yes,Yes,Yes,2029-04-22,2.1,9,249
+1148,Leederville,1 BR,636,2544,1,1,No,Yes,No,2029-04-29,14.8,6,74
+1149,Claremont,Shared Room,394,1576,3,2,No,Yes,Yes,2029-05-06,12.7,6,259
+1150,Cottesloe,2 BR,902,3608,2,1,No,Yes,Yes,2029-05-13,2.3,4,138
