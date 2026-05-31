@@ -5,16 +5,16 @@ README.md
 
 This repository documents my intensive 9-week python preparation for my Master of Business Analytics program at the University of Western Australia.
 
-### 🎯 Learning Goals
+### Learning Goals
 - Master Python fundamentals
 - Data analysis with Pandas and NumPy
 - Data visualization with Matplotlib
 - Build portfolio projects
 
-### 📅 Progress Tracker
+### Progress Tracker
 
 #### Week 1: 
-- Variables, data types, basic syntax
+- Variables, data types, loops, basic syntax
 - Lists, NumPy arrays, Matplotlib basics
 
 #### Week 2: 
@@ -22,3 +22,6 @@ This repository documents my intensive 9-week python preparation for my Master o
 - Mini Projects (Badminton, University, Perth - related)
 - Perth Financial Planning Project - Major
 
+#### Week 3:
+- Importance of brackets
+- Creating Dataset (Perth Suburb Rentals Project)
